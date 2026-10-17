@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d777d270cee3a5c419cb21a828556f1a, type: 3}
+  m_Name: CodeMonkeyFreeSO
+  m_EditorClassIdentifier: 
+  currentVersion: 1.00
+  subtype: lunarLanderFree
+  lastShownTimestamp: 1792152811
+  lastUpdateResponse:
+    version: 1.00
+    versionUrl: https://unitycodemonkey.com
+  checkedLastUpdateTimestamp: 1792152811
+  lastQOTDResponse:
+    questionId: 353
+    questionText: 'Does this variable get reset when you load a different Scene?
+
+      <p>private
+      static int score;</p>'
+    answerA: Yes
+    answerB: No
+    answerC: Only when loading the Main Menu
+    answerD: 
+    answerE: 
+  lastQotdTimestamp: 1792152811
+  lastDynamicHeaderResponse:
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Synty.png
+    topText: AWESOME Synty Asset with THOUSANDS of great assets!
+    topLink: humblebundle
+    bottomText: My 10+ Years of C# Knowledge in 1 Course!
+    bottomLink: csharpcourse
+  lastDynamicHeaderTimestamp: 1792152811
+  websiteLatestMessage:
+    text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
+      Click here!</a>
+  websiteLatestMessageTimestamp: 1792152811
+  websiteLatestVideos:
+    videos:
+    - youTubeId: HD1wNUTZ0_Y
+      title: Sell 25,000 copies in 24 HOURS? Steam's Update EXPLAINED!
+    - youTubeId: OzldphY8pTs
+      title: THIS is why your game looks TERRIBLE!
+    - youTubeId: o4WEUv31JOc
+      title: If your code is HORRIBLE watch this!
+    - youTubeId: trDO2Io6D2M
+      title: What is Unity Spark?
+  websiteLatestVideosTimestamp: 1792152811
