@@ -14,7 +14,7 @@ public class Lander : MonoBehaviour
         landerRigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if(Keyboard.current.upArrowKey.isPressed)
         {
@@ -42,8 +42,8 @@ public class Lander : MonoBehaviour
         }
 
         float softLandingSpeed = 4f;
-
-        if(collision.relativeVelocity.magnitude > softLandingSpeed)
+        float relativeVelocityMagnitude = collision.relativeVelocity.magnitude;
+        if (relativeVelocityMagnitude > softLandingSpeed)
         {
             Debug.Log("Landed too Hard!");
             return;
@@ -62,6 +62,14 @@ public class Lander : MonoBehaviour
 
         Debug.Log("Landed successfully!");
 
+        float maxScoreLandingAngle = 100f;
+        float scoreDotVectorMultiplier = 10f;
+        float landingAngleScore = maxScoreLandingAngle - Mathf.Abs(landingAngle - 1f) * scoreDotVectorMultiplier * maxScoreLandingAngle;
 
+        float maxScoreLandingSpeed = 100f;
+        float landingSpeedScore = (softLandingSpeed - relativeVelocityMagnitude) * maxScoreLandingSpeed;
+
+        Debug.Log($"Landing Angle Score: {landingAngleScore}");
+        Debug.Log($"Landing Speed Score: {landingSpeedScore}");
     }
 }
